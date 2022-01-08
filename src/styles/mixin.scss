@@ -9,7 +9,7 @@ $namespace: 'el';
 // 添加后缀啥的
 @mixin when($state) {
     @at-root {
-        &.#{$state-prefix + $state} {
+        &.#{'is' + $state} {
             @content;
         }
     }
