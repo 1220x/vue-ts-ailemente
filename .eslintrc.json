@@ -3,6 +3,7 @@
         "browser": true,
         "es2021": true
     },
+    "parser": "vue-eslint-parser",
     "extends": [
         "eslint:recommended",
         "plugin:vue/essential",
@@ -18,5 +19,6 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "vue/no-multiple-template-root": "off"
     }
 }
