@@ -17,8 +17,13 @@ export default {
 </script>
 
 <style  lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(main) {
-    flex: 1 1;
+    display: block;
+    flex: 1;
+    flex-basis: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: $--main-padding;
 }
 </style>

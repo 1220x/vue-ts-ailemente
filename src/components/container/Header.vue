@@ -28,14 +28,11 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(header) {
-    // padding: $--header-padding;
-    padding: 10px;
+    padding: $--header-padding;
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 100%;
-    border: 1px solid #00ff00;
 }
 </style>
 

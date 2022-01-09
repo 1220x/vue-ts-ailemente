@@ -27,11 +27,10 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(aside) {
-    padding: 10px;
+    overflow: auto;
     box-sizing: border-box;
     flex-shrink: 0;
-    border: 1px solid #ff00ff;
 }
 </style>

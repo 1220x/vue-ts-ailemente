@@ -21,16 +21,18 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-    height: '120px'
+    height: '60px'
 })
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
-@include b(footer) {
-    padding: 10px;
+@import '../styles/mixin.scss';
+@include b(input) {
+    padding: $--footer-padding;
     box-sizing: border-box;
     flex-shrink: 0;
-    border: 1px solid #ff0000;
+    @include m(inner) {
+        width: 300px;
+    }
 }
 </style>
