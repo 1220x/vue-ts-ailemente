@@ -3,6 +3,7 @@
         calss="el-header"
         :style="{ height }"
     >
+        <slot></slot>
     </header>
 </template>
 
@@ -33,6 +34,8 @@ withDefaults(defineProps<Props>(), {
     padding: 10px;
     box-sizing: border-box;
     flex-shrink: 0;
+    width: 100%;
+    border: 1px solid #00ff00;
 }
 </style>
 

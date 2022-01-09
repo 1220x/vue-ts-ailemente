@@ -1,4 +1,6 @@
 $namespace: 'el';
+$state-prefix: 'is-';
+
 @mixin b($block) {
     $B: $namespace + '-' + $block !global; // 通过传进来的block生成新的变量$B，拼接上了 饿了
     .#{$B} {
@@ -9,7 +11,7 @@ $namespace: 'el';
 // 添加后缀啥的
 @mixin when($state) {
     @at-root {
-        &.#{'is' + $state} {
+        &.#{$state-prefix + $state} {
             @content;
         }
     }

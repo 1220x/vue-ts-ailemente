@@ -3,6 +3,7 @@
         class="el-footer"
         :class="{ height }"
     >
+        <slot></slot>
     </footer>
 </template>
 
@@ -30,5 +31,6 @@ withDefaults(defineProps<Props>(), {
     padding: 10px;
     box-sizing: border-box;
     flex-shrink: 0;
+    border: 1px solid #ff0000;
 }
 </style>

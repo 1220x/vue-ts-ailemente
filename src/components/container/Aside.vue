@@ -3,6 +3,7 @@
         class="el-aside"
         :class="{ width }"
     >
+        <slot></slot>
     </aside>
 </template>
 
@@ -31,5 +32,6 @@ withDefaults(defineProps<Props>(), {
     padding: 10px;
     box-sizing: border-box;
     flex-shrink: 0;
+    border: 1px solid #ff00ff;
 }
 </style>
