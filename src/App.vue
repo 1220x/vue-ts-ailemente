@@ -7,6 +7,16 @@
     </el-container>
     <hr />
 
+    <el-button>
+        按钮
+    </el-button>
+
+    <el-button type="primary" size="small">按钮</el-button>
+
+    <el-button type="success" size="large">按钮</el-button>
+
+    <el-button type="danger" size="medium">按钮</el-button>
+
     <!-- <el-container>
         <el-header>Header</el-header>
         <el-container>
